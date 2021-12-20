@@ -13,5 +13,8 @@ if(!isset($_POST['username'])||!isset($_POST['userpassword']|| empty($_POST['use
 {
 header("location:signing.html");
 } elseif($_POST['username']=$POST)
+echo "bonjour";
+
+
 
 ?>
