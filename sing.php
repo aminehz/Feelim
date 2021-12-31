@@ -11,10 +11,14 @@ if($conn->connect_error)
     echo "failed to connect to mysql :" .$conn->connect_error;
 }else 
 { //echo "Connection succeeded";
-$sql="INSERT INTO user (id,user_id,username,password,email,user_tag,tag_id) values(,,'amine','amine123','em@poly',,)";
+$sql2="INSERT INTO user (id,username,password,email,user_tag,id_tag) values(4,'aminee','aamine123','em@poly','Drama',11)";
+$sql="SELECT * FROM user where username='aminee'";
 $result=$conn->query($sql);
-/*$row=$result->fetch_assoc();
-printf("%s\n %s",$row["question"],$row["answer_id"]);
+$result2=$conn->query($sql2);
+$row=$result->fetch_assoc();
+//$result2=$conn->query($sql2);
+//$row2=$result2->fetch_assoc();
+printf("%d\n%s%s%s%s%d\n",$row["id"],$row["username"],$row["password"],$row["email"],$row["user_tag"],$row["id_tag"]);
 $result->free_result();
 $conn->close();
 }
@@ -23,7 +27,7 @@ $conn->close();
 header("location:signing.html");
 } //elseif($_POST['username']=$POST)*/
 
-}
+
 
 
 ?>
