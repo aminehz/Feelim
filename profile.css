@@ -1,0 +1,125 @@
+body{
+	margin:0;
+	color: #ffffff;
+	background: black;
+	font:600 16px/18px 'Poppins';
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#header{
+    position: relative;
+  	width: 80%;
+    margin:0px auto; 
+}
+#logo{
+    position: absolute;
+    top: 7px;
+    left: 0px;  
+}
+#logo h1{
+    font-size: 45px;
+    color: #ffffff;
+	font-family: 'Rancho';
+	font-weight: normal;
+}
+#menu{
+    position: absolute;
+    top: 20px;
+	right: 0px;
+}
+#menu li{
+    display: block;
+    float: left;
+    text-align: center ;
+}
+#menu a{
+	padding:9px 20px;
+	letter-spacing: 1px;
+    font-size: 15px;
+    color: rgba(255,255,255);
+}
+#menu a:hover{
+    background-color: #A5091E;
+    border-radius: 25px;
+}
+#menu a:active{
+    color: white;
+}
+*{
+    box-sizing: border-box ;
+}
+ .contact
+ {
+     min-height: 90vh;
+     padding: 50px 100px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+    }
+.contact .content{
+    max-width: 700px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+}
+.contactForm{
+    width: 35%;
+    padding: 10px;
+    min-width:300px;
+}
+.contactForm h2{
+    font-size: 18px;
+    text-align: center;
+}
+.group{
+	margin-bottom:15px;
+}
+.group .input
+{
+	width:100%;
+	color:#fff;
+	display:block;
+}
+.group .input{
+	border:none;
+	padding:10px 20px;
+	border-radius:25px;
+	background:#1E1E1E;
+}
+.group input[data-type="password"]{
+	-webkit-text-security:circle;
+}
+.group .button{
+    border:none;
+    color:#fff;
+	padding:10px 20px;
+	border-radius:25px;
+	background:#A5091E;
+}
+.exit input{
+    border:none;
+    color:#fff;
+	padding:10px 20px;
+	border-radius:25px;
+	background:#A5091E;
+    margin-bottom:15px;
+    width:12%;
+	color:#fff;
+	display:block;
+    min-width:fit-content;
+}
+.exit .ex1{
+    float:left;
+    margin-left: 15px;
+}
+.exit .ex2{
+    float:right;
+    margin-right: 15px;
+}
+

@@ -14,7 +14,7 @@
     <video autoplay loop id="video-background" poster="/smoke.mp4" muted>
     <source src="/smoke.mp4" type="video/mp4">
     </video>
-    <form action="sing.php" method="POST" >
+    <form action="signin.php" method="POST" >
     <div class="login-wrap">
         <div class="login-html">
             <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign in</label>
@@ -37,22 +37,25 @@
 					    <a href="#forgot">Forgot Password?</a>
 				    </div>
                     </div>
+
+    </form>
+<form action="signup.php" method="post">
                 <div class="sign-up-htm">
                     <div class="group">
                         <label for="user" class="label">Username</label>
-                        <input id="user" name="" type="text" class="input">
+                        <input id="user" name="signupusername" type="text" class="input">
                     </div>
                     <div class="group">
                         <label for="pass" class="label">Email Address</label>
-                        <input id="pass" name="" type="text" class="input">
+                        <input id="pass" name="signupemail" type="text" class="input">
                     </div>
                     <div class="group">
                         <label for="pass" class="label">Password</label>
-                        <input id="pass" name="" type="password" class="input" data-type="password">
+                        <input id="pass" name="signuppassword" type="password" class="input" data-type="password">
                     </div>
                     <div class="group">
                         <label for="pass" class="label">Confirm Password</label>
-                        <input id="pass" name="" type="password" class="input" data-type="password">
+                        <input id="pass" name="signupcpassword" type="password" class="input" data-type="password">
                     </div>
                     <div class="group">
                         <input type="submit" class="button" value="Sign Up">

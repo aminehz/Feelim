@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="question.css" />
+    <script src="question.js" defer></script>
+    <title>Form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <header>
+      <div id="header">
+          <div id="logo">
+              <h1>Feelim</h1>
+          </div>
+          <div id="menu">
+              <ul>
+                  <li><a href="#">Search</a></li>
+                  <li><a href="#">Lists</a></li>
+                  <li><a href="#">Profile</a></li>
+              </ul>
+          </div>
+      </div>
+  </header>
+      <form method="POST" action="moviegrid.php">
+      <div class="progressbar">
+        <div class="progress" id="progress"></div>
+        <div class="progress-step progress-step-active"></div>
+        <div class="progress-step" ></div>
+        <div class="progress-step" ></div>
+        <div class="progress-step" ></div>
+        <div class="progress-step" ></div>
+      </div>
+      <div class="form-step form-step-active">
+        <div class="input-group">
+          <h4>question1</h4><br>
+            <div class="radiobtn">
+                <input type="radio" id="A1" name="question1" value="1" />
+                <label for="A1">A1</label>
+            </div>
+            <div class="radiobtn">
+                <input type="radio" id="A2" name="question1" value="2" />
+                <label for="A2">A2</label>
+            </div>
+        
+            <div class="radiobtn">
+                <input type="radio" id="A3" name="question1" value="3" />
+                <label for="A3">A3</label>
+            </div>
+        </div>
+        <div class="">
+          <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <h4>question2</h4>
+        <div class="input-group">
+          <div class="radiobtn">
+            <input type="radio" id="A4" name="question2" value="4" />
+            <label for="A4">A4</label>
+        </div>
+        <div class="radiobtn">
+            <input type="radio" id="A5" name="question2" value="5" />
+            <label for="A5">A5</label>
+        </div>
+        <div class="radiobtn">
+            <input type="radio" id="A6" name="question2" value="6" />
+            <label for="A6">A6</label>
+        </div>
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <h4>question3</h4>
+        <div class="input-group">
+          <div class="radiobtn">
+            <input type="radio" id="A7" name="question3" value="7" />
+            <label for="A7">A7</label>
+        </div>
+        <div class="radiobtn">
+            <input type="radio" id="A8" name="question3" value="8" />
+            <label for="A8">A8</label>
+        </div>
+    
+        <div class="radiobtn">
+            <input type="radio" id="A9" name="question3" value="9" />
+            <label for="A9">A9</label>
+        </div>
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <h4>question4</h4>
+        <div class="input-group">
+          <div class="radiobtn">
+            <input type="radio" id="A10" name="question4" value="10" />
+            <label for="A10">A10</label>
+        </div>
+        <div class="radiobtn">
+            <input type="radio" id="A11" name="question4" value="11" />
+            <label for="A11">A11</label>
+        </div>
+    
+        <div class="radiobtn">
+            <input type="radio" id="A12" name="question4" value="12" />
+            <label for="A12">A12</label>
+        </div>
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <h4>question5</h4>
+        <div class="input-group">
+          <div class="radiobtn">
+            <input type="radio" id="A13" name="question5" value="13" />
+            <label for="A13">A13</label>
+        </div>
+        <div class="radiobtn">
+            <input type="radio" id="A14" name="question5" value="14" />
+            <label for="A14">A14</label>
+        </div>
+    
+        <div class="radiobtn">
+            <input type="radio" id="A15" name="question5" value="15" />
+            <label for="A15">A15</label>
+        </div>
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <input type="submit" value="Submit" class="btn" />
+        </div>
+      </div>
+      </form>
+  </body>
+</html>

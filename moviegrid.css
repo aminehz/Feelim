@@ -1,0 +1,149 @@
+
+img {
+    max-width: 100%;
+  }
+
+  body{
+    margin:0;
+    color: #ffffff;
+    background: black;
+    font:600 16px/18px 'Poppins';
+  }
+  a{
+      color: white;
+      text-decoration: none;
+  }
+  #header{
+      position: relative;
+      width: 80%;
+      margin:0px auto;
+      padding-top: 90px; 
+  }
+  #logo{
+      position: absolute;
+      top: 7px;
+      left: 0px;  
+  }
+  #logo h1{
+      font-size: 45px;
+      color: #ffffff;
+    font-family: 'Rancho';
+    font-weight: normal;
+  }
+  #menu{
+      position: absolute;
+      top: 20px;
+    right: 0px;
+  }
+  #menu li{
+      display: block;
+      float: left;
+      text-align: center ;
+  }
+  #menu a{
+    padding:9px 20px;
+    letter-spacing: 1px;
+      font-size: 15px;
+      color: rgba(255,255,255);
+  }
+  #menu a:hover{
+      background-color: #A5091E;
+      border-radius: 25px;
+  }
+  #menu a:active{
+      color: white;
+  }
+  .title h1{
+    font-size: 38px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+} 
+  .main-container {
+    padding: 80px;
+  }
+  .box {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(6, minmax(100px, 1fr));
+  }
+  
+  .box a {
+    transition: transform .3s;  
+  }
+  
+  .box a:hover {
+    transition: transform .3s;
+    -ms-transform: scale(1.4);
+    -webkit-transform: scale(1.4);  
+    transform: scale(1.4);
+  }
+  
+  .box img {
+    border-radius: 8px;
+  }
+  
+  
+  @media(max-width: 900px) {
+    .box {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(4, minmax(100px, 1fr));
+    }
+  
+  }
+  @media(max-width: 700px) {
+  
+    .box {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(3, minmax(100px, 1fr));
+    }  
+  }
+  @media(max-width: 500px) {
+  
+    .box {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(1, 1fr);
+      text-align: center;    
+    }
+  
+    .box a:hover {
+      transition: transform .3s;
+      -ms-transform: scale(1);
+      -webkit-transform: scale(1);  
+      transform: scale(1.2);
+    }
+  
+  }
+  .name{
+    padding: 10px;
+    padding-right: 80px;
+  }
+  .name .input{
+      display: block;
+      float: right;
+      text-align: center ;
+      margin-bottom:15px;
+      width:20%;
+      color:#fff;
+      border:none;
+      padding:10px 20px;
+      border-radius:25px;
+      background:#1E1E1E;
+      margin-right: 10px;
+  }
+  .name .button{
+     display: block;
+      float: right;
+      text-align: center ;
+      margin-bottom:15px;
+      width:10%;
+      color:#fff; 
+      border:none;
+      padding:10px 20px;
+      border-radius:25px;
+      background:#A5091E;
+      min-width:fit-content;
+  }

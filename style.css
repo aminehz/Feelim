@@ -34,11 +34,12 @@ h1{
 	margin:auto;
 	max-width:1000px;
 	text-align: center;
-	font-family: 'Rancho';
+	font:600 16px/18px 'Poppins'
 }
 .main h2{
 	color: white;
 	font-size: 100px;
+	font-family: 'Rancho';
 }
 .login-wrap{
 	width:100%;
