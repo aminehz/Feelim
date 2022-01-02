@@ -56,19 +56,20 @@ $result = $conn->query($sql);
       <form action="saveList.php" method="POST">
         <input type="submit" class="button" value="Save">
         <input type="text" name="listName" placeholder="Name the list" class="input">
-        <?php
+        <!--
+          < ? php
         $filmIds="[";
            while($row = $result->fetch_assoc()) { 
             $filmIds .= strval($row["id_film"]) . ",";
           }
           $filmIds .= "]";
           echo '<input  name="films" type="number" value='.$filmIds.' hidden/>';
-        ?>
+        ?> -->
       </form>
     </div>
     <section class="main-container" >
           <div class="box">
-            <?php
+           <?php
                 while($row = $result->fetch_assoc()) {
                   echo '<a href="movie.php?id='.$row["id_film"].'&name='.$row["name"].'&description='.$row["description"].'&tags='.$row["movie_tag"].'">'.$row["name"].'</a>';
                 }
